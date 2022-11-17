@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./stylesheets/all.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.2/font/bootstrap-icons.css">
+</head>
+<body>
+  <div class="d-flex">
+    <aside class="sidebar vh-100 pt-3 border-end d-flex bg-white flex-column">
+        <!-- 後台名稱 -->
+        <div class="px-4">
+          <strong>A2E美式餐廳</strong>
+          -後台管理
+        </div>
+        <div class="overflow-auto mt-3">
+			<div>
+				<a href="#" class="sidebar-link active">
+					<div class="px-4">
+						<i class="bi bi-house"></i>
+						首頁
+					</div>
+				</a>
+			</div>
+			<!-- 下拉選單 -->
+			<div>
+					<a class="sidebar-link" data-bs-toggle="collapse" href="#menu-order">
+						<div class="d-flex justify-content-between px-4">
+						<p class="mb-0">
+							<i class="bi bi-journal-text"></i>
+							訂單管理 
+						</p>
+						<i class="bi bi-caret-down-square"></i>
+						</div>
+					</a>
+					<!-- 收合樣式 -->
+					<div class="collapse" id="menu-order">
+						<a href="#" class="sidebar-link">
+							<div class="ps-5">
+								訂單列表
+							</div>
+						</a>
+					</div>
+					<div class="collapse" id="menu-order">
+						<a href="#" class="sidebar-link">
+							<div class="ps-5">
+								單一訂單細節
+							</div>
+						</a>
+					</div>
+			</div>
+			<div>
+				<a href="#" class="sidebar-link">
+					<div class="px-4">
+						<i class="bi bi-text-indent-right"></i>
+						參考連結
+					</div>
+				</a>
+			</div>
+			</div>
+        <!-- 登出區塊 -->
+        <a href="#" class="mt-auto sidebar-link border-top">
+          <div class="px-4">
+				<i class="bi bi-box-arrow-left"></i>
+            登出
+          </div>
+        </a>
+    </aside>
+		<!-- 主要區塊 -->
+    <main class="main">
+      <div class="bg-white w-100 sticky-top border-bottom">
+        <a href="#" class="d-inline-block py-3 px-4 border-end" id="toggle-btn">
+          <i class="bi bi-arrows-angle-expand"></i>
+        </a>
+      </div>
+    </main>
+  <div>
+</body>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-/bQdsTh/da6pkI1MST/rWKFNjaCP5gBSY4sEBT38Q/9RBh9AH40zEOg7Hlq2THRZ" crossorigin="anonymous"></script>
+<script src="./javascripts/all.js"></script>
+</html>
