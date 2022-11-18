@@ -4,7 +4,7 @@ $sidebar-width: 280px;
 .sidebar {
     width: $sidebar-width;
     margin-left: -$sidebar-width;
-    transition: margin-left .25s;
+    transition: margin-left 1s;
     flex-shrink: 0;
     position: fixed;
     top: 0;
@@ -60,7 +60,7 @@ $sidebar-width: 280px;
     .main {
         width: calc( 100vw - #{ $sidebar-width });
         margin-left: $sidebar-width;
-        transition: margin-left 0.25s ;
+        transition: margin-left 1s ;
     }
     // 展開
     .sidebar-toggled {
